@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="elfak.mosis.svirke.MainActivity">
+
+    <item
+        android:id="@+id/action_show_map"
+        android:orderInCategory="100"
+        android:title="Mapa"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_map_24"
+        />
+    <item
+        android:id="@+id/action_show_profile"
+        android:orderInCategory="100"
+        android:title="Profil"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_person_24"
+        />
+    <item
+        android:id="@+id/action_show_scoreboard"
+        android:orderInCategory="100"
+        android:title="Tabela"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_emoji_events_24"
+        />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Log out"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_logout_24"
+        />
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:title="Add"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_add_20"/>
+</menu>

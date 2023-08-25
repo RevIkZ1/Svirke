@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.InfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="50dp"
+        tools:context=".fragments.InfoFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/placeholder_image"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Naziv nastupa"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/opisLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opis:"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/opis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ovde ide opis nastupa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et tortor et nisi sagittis rutrum. Maecenas pellentesque vel sapien eu interdum. Integer auctor venenatis lacus in vestibulum."
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/vrstaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vrsta:"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/vrsta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muzički nastup"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/datumLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datum nastupa:"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/datum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25. jul 2023"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <!-- TextView for displaying the number of likes -->
+                <TextView
+                    android:id="@+id/likeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Likes: 0"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- TextView for displaying the number of dislikes -->
+                <TextView
+                    android:id="@+id/dislikeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dislikes: 0"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <!-- LinearLayout for like and dislike buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <!-- Button for Like -->
+                <Button
+                    android:id="@+id/likeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Like"
+                    android:layout_marginRight="8dp" />
+
+                <!-- Button for Dislike -->
+                <Button
+                    android:id="@+id/dislikeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dislike" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="ime">ime</string>
+    <string name="prezime">prezime</string>
+    <string name="broj_telefona">broj telefona</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="add_image">Add image</string>
+    <string name="click_to_login">Login</string>
+    <string name="login">Login</string>
+    <string name="click_to_register">Register</string>
+    <string name="mapa">Mapa</string>
+    <string name="profil">Profil</string>
+    <string name="tabela">Tabela</string>
+    <string name="log_out">Log out</string>
+    <string name="MAPS_API_KEY">AIzaSyDNzifiqAYJabSMO37U0-wPyjV__oSGiaE</string>
+    <string name="izaberite_vrstu_muzike">Izaberite vrstu muzike</string>
+    <string name="filter_mesta_za_svirke">Mesta za svirke</string>
+</resources>

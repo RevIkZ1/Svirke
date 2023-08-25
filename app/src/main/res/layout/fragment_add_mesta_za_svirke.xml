@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddMestaZaSvirkeFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <!-- Unos za 'title' -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naziv nastupa" />
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Unesite naziv nastupa"
+                android:inputType="text" />
+
+            <!-- Unos za 'description' -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opis (gde se mogu kupiti karte)" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Unesite opis"
+                android:inputType="text"
+                />
+
+            <!-- Padajući meni za 'vrstaMuzike' -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vrsta muzike" />
+
+            <Spinner
+                android:id="@+id/spinnerVrstaMuzike"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:entries="@array/vrste_muzike"
+                android:prompt="@string/izaberite_vrstu_muzike" />
+
+            <!-- Unos za 'date' -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datum i vreme" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Unesite datum i vreme (npr. dd/MM/yyyy HH:mm)"
+                android:inputType="datetime" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_image" />
+
+            <Button
+                android:id="@+id/btn_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_image" />
+
+            <!-- Dugme za čuvanje podataka -->
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sačuvaj" />
+
+        </LinearLayout>
+</FrameLayout>

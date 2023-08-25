@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vrste_muzike">
+        <item>Choose</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Jazz</item>
+        <item>Blues</item>
+        <item>Klasična</item>
+    </string-array>
+</resources>

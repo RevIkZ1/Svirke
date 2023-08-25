@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ime" type="id" />
+    <item name="prezime" type="id" />
+    <item name="broj_telefona" type="id" />
+    <item name="imageView" type="id" />
+</resources>
