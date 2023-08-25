@@ -130,6 +130,7 @@ class MestaZaSvirkeViewModel : ViewModel() {
                         val mestoDate = mestoZaSvirku.date
                         val calendar = Calendar.getInstance()
                         calendar.time = mestoDate
+
                         val mestoYear = calendar.get(Calendar.YEAR)
                         val mestoMonth = calendar.get(Calendar.MONTH)
                         val mestoDay = calendar.get(Calendar.DAY_OF_MONTH)
