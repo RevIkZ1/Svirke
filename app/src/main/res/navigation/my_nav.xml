@@ -91,6 +91,9 @@
         <action
             android:id="@+id/action_infoFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_leaderBoardFragment"
+            app:destination="@id/leaderBoardFragment" />
     </fragment>
     <fragment
         android:id="@+id/leaderBoardFragment"
@@ -109,6 +112,9 @@
         <action
             android:id="@+id/action_leaderBoardFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_leaderBoardFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
     </fragment>
     <fragment
         android:id="@+id/filterFragment"

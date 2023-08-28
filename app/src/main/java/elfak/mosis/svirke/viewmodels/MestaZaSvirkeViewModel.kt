@@ -168,16 +168,17 @@ class MestaZaSvirkeViewModel : ViewModel() {
             val databaseSvirke = FirebaseDatabase.getInstance("https://svirke-4ddc6-default-rtdb.europe-west1.firebasedatabase.app").getReference("MestaZaSvirke")
             if (svirka.dislikedByUsers.contains(user.username)) {
                 val databaseUser = FirebaseDatabase.getInstance("https://svirke-4ddc6-default-rtdb.europe-west1.firebasedatabase.app").getReference("Users")
-                databaseUser.child(user.username).child("points").setValue(user.points - 10)
+                databaseUser.child(user.username).child("points").setValue(user.points + 10)
                 svirka.dislikedByUsers.remove(user.username)
                 svirka.dislike = svirka.dislike - 1
                 databaseSvirke.child(svirka.id).child("dislikedByUsers").setValue(svirka.dislikedByUsers)
                 databaseSvirke.child(svirka.id).child("dislike").setValue(svirka.dislike)
+                databaseUser.child(user.username).child("points").setValue(user.points + 50)
             }
             databaseSvirke.child(svirka.id).child("likedByUsers").setValue(svirka.likedByUsers)
             databaseSvirke.child(svirka.id).child("like").setValue(svirka.like)
             val databaseUser = FirebaseDatabase.getInstance("https://svirke-4ddc6-default-rtdb.europe-west1.firebasedatabase.app").getReference("Users")
-            databaseUser.child(user.username).child("points").setValue(user.points + 10)
+            databaseUser.child(user.username).child("points").setValue(user.points + 5)
 
             databaseUser.child(svirka.ownerId).get().addOnSuccessListener { dataSnapshot ->
                 val owner = dataSnapshot.getValue(User::class.java)
@@ -199,16 +200,16 @@ class MestaZaSvirkeViewModel : ViewModel() {
             if (svirka.likedByUsers.contains(user.username)) {
                 val databaseUser = FirebaseDatabase.getInstance("https://svirke-4ddc6-default-rtdb.europe-west1.firebasedatabase.app").getReference("Users")
                 databaseUser.child(user.username).child("points").setValue(user.points - 10)
-                svirka.likedByUsers.remove(user.username) // Uklanjamo korisnika iz liste likedByUsers
-                svirka.like = svirka.like - 1 // Smanjujemo broj lajkova za 1
+                svirka.likedByUsers.remove(user.username)
+                svirka.like = svirka.like - 1
                 databaseSvirke.child(svirka.id).child("likedByUsers").setValue(svirka.likedByUsers)
                 databaseSvirke.child(svirka.id).child("like").setValue(svirka.like)
-
+                databaseUser.child(user.username).child("points").setValue(user.points - 5)
             }
             databaseSvirke.child(svirka.id).child("dislikedByUsers").setValue(svirka.dislikedByUsers)
             databaseSvirke.child(svirka.id).child("dislike").setValue(svirka.dislike)
             val databaseUser = FirebaseDatabase.getInstance("https://svirke-4ddc6-default-rtdb.europe-west1.firebasedatabase.app").getReference("Users")
-            databaseUser.child(user.username).child("points").setValue(user.points + 10)
+            databaseUser.child(user.username).child("points").setValue(user.points - 5)
             databaseUser.child(svirka.ownerId).get().addOnSuccessListener { dataSnapshot ->
                 val owner = dataSnapshot.getValue(User::class.java)
                 if (owner != null) {

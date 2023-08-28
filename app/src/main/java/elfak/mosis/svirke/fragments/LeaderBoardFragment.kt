@@ -49,7 +49,6 @@ class LeaderBoardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Toast.makeText(this.activity, "kurac", Toast.LENGTH_SHORT).show()
         val leaderboardAdapter= LeaderBoardAdapter(requireContext(),usersViewModel.users!!)
         binding.listViewLeaderboard.adapter=leaderboardAdapter
     }
@@ -81,6 +80,11 @@ class LeaderBoardFragment : Fragment() {
             R.id.action_show_map->
             {
                 this.findNavController().navigate(R.id.action_leaderBoardFragment_to_homeFragment)
+                true
+            }
+            R.id.action_show_profile->
+            {
+                this.findNavController().navigate(R.id.action_leaderBoardFragment_to_profileFragment)
                 true
             }
             else->super.onContextItemSelected(item)

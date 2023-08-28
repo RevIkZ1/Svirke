@@ -143,6 +143,18 @@ class AddMestaZaSvirkeFragment : Fragment() {
                     .navigate(R.id.action_addMestaZaSvirkeFragment_to_homeFragment)
                 true
             }
+            R.id.action_show_profile->
+            {
+                this.findNavController()
+                    .navigate(R.id.action_addMestaZaSvirkeFragment_to_profileFragment)
+                true
+            }
+            R.id.action_show_scoreboard->
+            {
+                this.findNavController()
+                    .navigate(R.id.action_addMestaZaSvirkeFragment_to_leaderBoardFragment)
+                true
+            }
 
             else -> super.onContextItemSelected(item)
         }

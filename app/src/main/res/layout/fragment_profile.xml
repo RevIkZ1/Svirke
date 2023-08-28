@@ -16,60 +16,125 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
->
+            >
             <!-- Prikazivanje URL слике -->
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="250dp"
+                android:layout_height="450dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/ic_launcher_foreground"
                 android:layout_marginBottom="16dp" />
 
             <!-- Prikazivanje imena korisnika -->
-            <TextView
-                android:id="@+id/textFirstName"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="First Name Placeholder"
-                android:layout_marginBottom="16dp" />
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ime:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="First Name Placeholder"
+                    />
+            </LinearLayout>
 
             <!-- Prikazivanje prezimena korisnika -->
-            <TextView
-                android:id="@+id/textLastName"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Last Name Placeholder"
-                android:layout_marginBottom="16dp" />
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
 
-            <!-- Prikazivanje korisničког имена -->
-            <TextView
-                android:id="@+id/textUsername"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Username Placeholder"
-                android:layout_marginBottom="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prezime:"
+                    android:textStyle="bold" />
 
-            <!-- Prikazivanje броја телефона -->
-            <TextView
-                android:id="@+id/textPhoneNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Phone Number Placeholder"
-                android:layout_marginBottom="16dp" />
+                <TextView
+                    android:id="@+id/textLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Last Name Placeholder"
+                     />
+            </LinearLayout>
 
-            <!-- Prikazivanje броја поена -->
-            <TextView
-                android:id="@+id/textPoints"
-                android:layout_width="wrap_content"
+            <!-- Prikazivanje korisničkog imena -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Points Placeholder"
-                android:layout_marginBottom="16dp" />
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Korisničko ime:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Username Placeholder"
+                     />
+            </LinearLayout>
+
+            <!-- Prikazivanje broja telefona -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Broj telefona:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Phone Number Placeholder"
+                     />
+            </LinearLayout>
+
+            <!-- Prikazivanje broja poena -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Broj poena:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Points Placeholder"
+                     />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

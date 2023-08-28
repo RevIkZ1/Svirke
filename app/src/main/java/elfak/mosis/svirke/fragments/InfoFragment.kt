@@ -83,6 +83,18 @@ class InfoFragment : Fragment() {
                     .navigate(R.id.action_infoFragment_to_addMestaZaSvirkeFragment)
                 true
             }
+            R.id.action_show_profile->
+            {
+                this.findNavController()
+                    .navigate(R.id.action_infoFragment_to_profileFragment)
+                true
+            }
+            R.id.action_show_scoreboard->
+            {
+                this.findNavController()
+                    .navigate(R.id.action_infoFragment_to_leaderBoardFragment)
+                true
+            }
 
             else -> super.onContextItemSelected(item)
         }
