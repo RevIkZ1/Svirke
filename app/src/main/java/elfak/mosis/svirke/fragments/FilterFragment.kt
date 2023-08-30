@@ -92,9 +92,6 @@ class FilterFragment :  DialogFragment() {
             )
             dismiss()
         }
-        binding.filterReset.setOnClickListener {
-            mestoZaSvirkeViewModel.resetFilter()
-            dismiss()
-        }
+
     }
 }

@@ -124,13 +124,7 @@
                     android:layout_height="wrap_content"
                     android:text="Filtriraj"
                     android:layout_marginLeft="50dp"/>
-                <Button
-                    android:id="@+id/filterReset"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Reset"
-                    android:layout_marginLeft="20dp"/>
+
             </LinearLayout>
 
         </LinearLayout>
